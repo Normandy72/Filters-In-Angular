@@ -13,9 +13,10 @@
     <div ng-controller="FilterController">
         <!-- Message is: <br> -->
         <!-- {{name}} has a message for you: <br> -->
-        <!-- {{sayMessage()}} -->
+        {{sayMessage()}}
         <div>
             <button ng-click="feedYaakov()">Feed Yaakov!</button>
+            Cost: {{cookieCost | currency : "#blah" : 4}}
             <br>
             <img ng-src="images/yaakov_{{stateOfBeing}}.png">
         </div>
